@@ -52,6 +52,24 @@ export default function NavBar({ variant = 'landing' }: Props) {
             >
               My Assets
             </Link>
+            <Link
+              href="/search"
+              className={[
+                'px-3 py-1.5 rounded-xl text-sm transition-colors',
+                isActive('/search') ? 'bg-white/15' : 'hover:bg-white/10'
+              ].join(' ')}
+            >
+              Search
+            </Link>
+            <Link
+              href="/ai"
+              className={[
+                'px-3 py-1.5 rounded-xl text-sm transition-colors',
+                isActive('/ai') ? 'bg-white/15' : 'hover:bg-white/10'
+              ].join(' ')}
+            >
+              AI
+            </Link>
           </div>
         ) : (
           <span /> /* spacer */
