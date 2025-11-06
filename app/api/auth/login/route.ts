@@ -53,7 +53,7 @@ export async function POST(req: Request) {
       path: '/', maxAge: 60 * 60 * 24 * 7,
     })
     return res
-  } catch (e)_ {
+  } catch (e) {
     console.error('Login error:', e)
     return NextResponse.json({ message: 'Login failed.' }, { status: 500 })
   }
